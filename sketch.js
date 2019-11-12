@@ -1,10 +1,11 @@
 function setup() {
-  createCanvas(800, 400);
+  canvas = createCanvas(canvasWidth, canvasHeight);
+  canvas.position(windowWidth/2 - canvasWidth/2, 20);
+  noCursor();
 }
 
 function draw() {
   background(255, 255, 255);
-
   fill(0);
   textAlign(CENTER);
   text('Click to create a new sprite', width/2, height/2);
