@@ -14,11 +14,6 @@ function setup() {
   resetGame();
 }
 
-function draw() {
-  background(30);
-  rect(mouseX, mouseY, 100, 100);
-}
-
 
 function preload() {
   sound_hit = loadSound('hit.wav');
