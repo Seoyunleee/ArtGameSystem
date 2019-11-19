@@ -6,6 +6,10 @@ let car1;
 let goal;
 let sound_hit;
 
+function preload() {
+  sound_hit = loadSound('assets/hit.wav');
+}
+
 function setup() {
   canvas = createCanvas(canvasWidth, canvasHeight);
   canvas.position(windowWidth/2 - canvasWidth/2, 20);
@@ -13,12 +17,6 @@ function setup() {
 
   resetGame();
 }
-
-
-function preload() {
-  sound_hit = loadSound('hit.wav');
-}
-
 
 
 function draw() {
