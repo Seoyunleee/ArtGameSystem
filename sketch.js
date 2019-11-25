@@ -5,6 +5,7 @@ let frog;
 let car1;
 let goal;
 let sound_hit;
+let looper;
 
 function preload() {
   sound_hit = loadSound('assets/hit.wav');
@@ -16,6 +17,14 @@ function setup() {
   noCursor();
 
   resetGame();
+
+  looper = new p5.SoundLoop(function(timeFromNow){
+    sound_hit.play(timeFromNow);
+    background(255 * (looper.iterations % 2));
+    }, 2);
+  looper.maxIterations = 10;
+  looper.start();
+
 }
 
 
