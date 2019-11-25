@@ -8,7 +8,7 @@ let sound_hit;
 let looper1;
 
 function preload() {
-  sound_hit = loadSound('assets/hit.wav');
+  sound_hit = loadSound('assets/hitt.wav');
   sound_hit2 = loadSound('assets/backsound.wav');
 }
 
