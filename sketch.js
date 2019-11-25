@@ -9,6 +9,7 @@ let looper1;
 
 function preload() {
   sound_hit = loadSound('assets/hit.wav');
+  sound_hit2 = loadSound('assets/backsound.wav');
 }
 
 function setup() {
@@ -19,7 +20,7 @@ function setup() {
   resetGame();
 
   looper1 = new p5.SoundLoop(function(timeFromNow){
-    sound_hit.play(timeFromNow);
+    sound_hit2.play(timeFromNow);
     background(255 * (looper1.iterations % 2));
     }, 2);
   looper1.maxIterations = 10;
