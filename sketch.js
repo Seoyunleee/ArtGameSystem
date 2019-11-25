@@ -23,7 +23,7 @@ function setup() {
     sound_hit2.play(timeFromNow);
     background(255 * (looper1.iterations % 2));
     }, 2);
-  looper1.maxIterations = 10;
+  looper1.maxIterations = 60;
   looper1.start();
 
 }
